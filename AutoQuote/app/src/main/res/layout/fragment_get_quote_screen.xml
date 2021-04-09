@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_solid"
+    android:scrollbars="vertical"
+    app:layout_scrollFlags="scroll"
+    tools:context=".GetQuoteScreen"
+    >
+
+    <TextView
+        android:id="@+id/premium_text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/premium_label"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/quote_premium_range"
+        app:layout_constraintEnd_toStartOf="@id/quote_premium_range"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quote_premium_range"
+        />
+
+    <TextView
+        android:id="@+id/deductible_text_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deductible_txt"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/quote_deductible_range"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quote_deductible_range"
+        />
+
+    <Button
+        android:id="@+id/BestQuoteButton"
+        style="@style/btnPrimary"
+        android:layout_width="297dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="12dp"
+        android:width="102dp"
+        android:text="@string/default_insurance_plan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/quote_premium_range"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:valueFrom="125.0"
+        android:valueTo="2800"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/premium_text_label"
+        app:layout_constraintStart_toStartOf="@+id/quote_deductible_range"
+        app:layout_constraintTop_toBottomOf="@+id/BestQuoteButton"
+        app:values="@array/premium_initial_values"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/quote_deductible_range"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+
+        android:valueFrom="100.0"
+        android:valueTo="1000"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deductible_text_label2"
+        app:layout_constraintTop_toBottomOf="@+id/quote_premium_range"
+        app:values="@array/deductible_initial_values"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quote_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="24dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/SendQuoteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quote_deductible_range"
+
+        tools:listitem="@layout/quote_list_item"
+        />
+
+    <Button
+        android:id="@+id/SendQuoteBtn"
+        style="@style/btnPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="@string/sendquote_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

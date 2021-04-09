@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="btnEdit">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:backgroundTint">@color/material_on_primary_emphasis_medium</item>
+        <item name="android:src">@mipmap/editicn</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="btnPrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnLogin" parent="btnPrimary">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:ems">8</item>
+    </style>
+
+    <style name="tvPrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="tvPrimarySm" parent="tvPrimary">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="tvPrimary.card">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/lato_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tvPrimary.card.sm">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tvTitle" parent="tvPrimary">
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="tvTitle.center">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="etClientInfo" parent="tvPrimary">
+        <item name="android:layout_width">0dp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:text">@string/empty_field</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="etClientInfoSm" parent="etClientInfo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:textColorHint">@color/off_white</item>
+    </style>
+
+    <style name="etNewClient">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/off_white</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_default</item>
+    </style>
+
+    <style name="etLogin" parent="etNewClient">
+        <item name="android:ems">10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/off_white</item>
+    </style>
+
+    <style name="etNewClientNumber" parent="etNewClient">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="spnQuoteInformation">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name = "android:layout_marginBottom">5dp</item>
+        <item name ="android:popupBackground">#800000</item>
+
+    </style>
+
+    <style name="spinnerStyle">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="spnOnPrimary">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="dpTextColor">
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+
+    <style name="quoteInfoCheckbox" parent="Base.Theme.AppCompat">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:buttonTint">@color/white</item>
+        <item name="android:textColorSecondary">@color/off_white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+</resources>

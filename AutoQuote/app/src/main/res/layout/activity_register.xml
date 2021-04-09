@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_solid"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Register"
+    >
+
+    <TextView
+        android:id="@+id/txtvRegRegister"
+        style="@style/tvTitle.center"
+        android:text="@string/register_label"
+        />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/etRegPhoneNumber"
+        style="@style/etLogin"
+        android:hint="@string/enter_your_phone_number_hint"
+        android:inputType="number"
+        app:mask="(###) ###-####"
+        />
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        style="@style/etLogin"
+        android:hint="@string/enter_password_hint"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/etRegOneTimePass"
+        style="@style/etLogin"
+        android:hint="@string/enter_one_time_password_hint"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnRegOTP"
+        style="@style/btnLogin"
+        android:ems="9"
+        android:text="@string/get_one_time_password_btn"
+        />
+
+    <Button
+        android:id="@+id/btnRegRegister"
+        style="@style/btnLogin"
+        android:ems="9"
+        android:text="@string/register_btn"
+        />
+
+</LinearLayout>

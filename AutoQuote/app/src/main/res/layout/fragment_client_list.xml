@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ClientListFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/titleConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_gradient"
+            >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_solid"
+                    android:clipToPadding="false"
+                    android:padding="4dp"
+                    tools:listitem="@layout/layout_client_list_item"
+                    />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/quoteInformation"
+        android:name="com.revature.autoquote.QuoteInformation"
+        android:label="Enter Vehicle Information"
+        tools:layout="@layout/fragment_quote_information">
+        <action
+            android:id="@+id/action_quoteInformation_to_getQuoteScreen"
+            app:destination="@id/getQuoteScreen"
+            app:popUpTo="@id/quoteInformation" />
+        <action
+            android:id="@+id/action_quoteInformation_to_getQuoteScreen2"
+            app:destination="@id/getQuoteScreen"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/quoteInformation" />
+        <argument
+            android:name="clientPhoneNumber"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/getQuoteScreen"
+        android:name="com.revature.autoquote.GetQuoteScreen"
+        android:label="Quote"
+        tools:layout="@layout/fragment_get_quote_screen">
+        <action
+            android:id="@+id/action_getQuoteScreen_to_quoteInformation"
+            app:destination="@id/quoteInformation" />
+        <argument
+            android:name="client"
+            app:argType="com.revature.autoquote.database.Client"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/clientListFragment"
+        android:name="com.revature.autoquote.ClientListFragment"
+        android:label="Clients"
+        tools:layout="@layout/fragment_client_list">
+        <action
+            android:id="@+id/action_clientListFragment_to_quoteInformation"
+            app:destination="@id/quoteInformation"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/clientListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.revature.autoquote.HomePageFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePage_to_newClient"
+            app:destination="@id/newClient"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/homePage" />
+        <action
+            android:id="@+id/action_homePage_to_clientListFragment"
+            app:destination="@id/clientListFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/homePage"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/newClient"
+        android:name="com.revature.autoquote.NewClientFragment"
+        android:label="New Client"
+        tools:layout="@layout/fragment_new_client" >
+        <action
+            android:id="@+id/action_newClient_to_clientListFragment"
+            app:destination="@id/clientListFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.revature.autoquote.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info"
+        />
+</navigation>

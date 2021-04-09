@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="premium_initial_values">
+        <item>125.0</item>
+        <item>150.0</item>
+    </string-array>
+    <string-array name="deductible_initial_values">
+        <item>100.0</item>
+        <item>150.0</item>
+    </string-array>
+</resources>

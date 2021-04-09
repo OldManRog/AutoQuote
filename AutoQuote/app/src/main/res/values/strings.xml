@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">AutoQuote</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="team_description">
+        This is a project developed by a game programmer, a former scrum master, a math major/bartender, a general computer programmer, a computer science major/grocery store bagger and a computer science major. This project has taken the six of us roughly 350
+        hours and it is 95 percent done(because the rest we have not been taught). This app takes in user input in the form of what their car is and what it has and calculates, using an algorithm(thanks to our math major/bartender), and orders them from best to worst.
+        We wish you luck with using the app. This was developed by Alec and co. which has co owners Rogerr and co and Mathew and co, not to be confuesed with Matthew and co, which these companies are partnered with Liam and co and Jacob and co and all these companies
+        are owned by Roya and co which is owned by Mayor and co all rights reserved.
+    </string>
+
+    <string name="empty_field">ERR: EMPTY FIELD</string>
+
+    <integer-array name="init">
+        <item>20</item>
+        <item>60</item>
+    </integer-array>
+
+    <string-array name="states">
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+
+    <string name="search_title">search</string>
+    <string name="combnine_name">%1$s %2$s</string>
+    <string name="premium_label">Premium: </string>
+    <string name="input_needed_toast">Input required</string>
+    <string name="click_register_text">Register button was clicked!</string>
+    <string name="clicked_toast">clicked</string>
+    <string name="default_username">Roya</string>
+    <string name="default_password">Roya</string>
+    <string name="successful_login">Logged in Successfully</string>
+    <string name="failed_login">LogIn failed</string>
+    <string name="sent_quote">Quote Sent!</string>
+    <string name="timber_log_txt">this is the </string>
+    <string name="filter_default_text">Filter by name</string>
+    <string name="make_item_1">Audi</string>
+    <string name="make_item_2">BMW</string>
+    <string name="make_item_3">Dodge</string>
+    <string name="make_item_4">Honda</string>
+    <string name="make_item_5">Jeep</string>
+    <string name="make_item_6">Nissan</string>
+    <string name="make_item_7">Mercedes-Benz</string>
+    <string name="make_item_8">Toyota</string>
+    <string name="make_item_9">Volkswagen</string>
+    <string name="audi_model_1">Audi A4</string>
+    <string name="audi_model_2">Audi A3</string>
+    <string name="audi_model_13">Audi A6</string>
+    <string name="audi_model_14">Audi R8</string>
+    <string name="BMV_model_1">128i Coupe</string>
+    <string name="BMV_model_2">328i Coupe</string>
+    <string name="BMV_model_3">328i Convertible</string>
+    <string name="BMV_model_4">328i Sedan</string>
+    <string name="dodge_model_1">Camaro</string>
+    <string name="dodge_model_2">Corvette</string>
+    <string name="dodge_model_3">Spark</string>
+    <string name="dodge_model_4">Tahoe</string>
+    <string name="honda_model_1">Honda Civic</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="log_in">Login:</string>
+    <string name="password_hint">Password</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="register_btn">Register</string>
+    <string name="enter_one_time_password_hint">One Time Password</string>
+    <string name="enter_password_hint">Password</string>
+    <string name="register_label">Register</string>
+    <string name="enter_your_phone_number_hint">Phone Number</string>
+    <string name="get_one_time_password_btn">Get One-Time Password</string>
+    <string name="default_insurance_plan">Liam\'s Insurance\nIDV: 50\tPremium: 209\nType of Plan: Comprehensive</string>
+    <string name="sendquote_btn">Send Quote</string>
+    <string name="client_list_btn">Client List</string>
+    <string name="new_client_btn">New Client</string>
+    <string name="log_out_btn">Log Out</string>
+    <string name="newclient_hint">New Client</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="drivers_license_hint">Drivers License</string>
+    <string name="email_hint">Email</string>
+    <string name="street_hint">Street</string>
+    <string name="city_hint">City</string>
+    <string name="add_new_client_btn">Add New Client</string>
+    <string name="send_one_time_password_btn">Send One-Time Password</string>
+    <string name="deductible_txt">Deductible:</string>
+    <string name="premium_txt">Premium:</string>
+    <string name="insurance_co_txt">Insurance Co.</string>
+    <string name="nav_drawer_header">Nav Drawer Header</string>
+    <string name="quoteInfoCheckBox1">Student</string>
+    <string name="quoteInfoCheckBox2">Military</string>
+    <string name="quoteInforCheckBox3">Senior</string>
+    <string name="quoteInfoCheckBox4">UBI</string>
+    <string name="tvPleaseSelecDiscounts">Please Select Applicable Discounts</string>
+    <string name="QuoteInfo_Hint_client_name">Client Name</string>
+    <string name="information">Information</string>
+    <string name="phone_symbol_on_client_card">Phone symbol on Client card</string>
+
+</resources>

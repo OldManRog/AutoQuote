@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_solid"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="48dp"
+    tools:context=".MainActivity"
+    tools:ignore="Autofill"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginBottom="32dp"
+        app:srcCompat="@drawable/main_screen_logo"
+        />
+
+    <TextView
+        android:id="@+id/txtvLogIn"
+        style="@style/tvTitle.center"
+        android:text="@string/log_in"
+        />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/etUsername"
+        style="@style/etLogin"
+        android:hint="@string/phone_number_hint"
+        android:inputType="number"
+        app:mask="(###) ###-####"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/etLogin"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        />
+
+
+    <Button
+        android:id="@+id/btnLogIn"
+        style="@style/btnLogin"
+        android:text="@string/login"
+        />
+
+    <Button
+        android:id="@+id/btnLogInRegister"
+        style="@style/btnLogin"
+        android:text="@string/register"
+        />
+
+
+</LinearLayout>

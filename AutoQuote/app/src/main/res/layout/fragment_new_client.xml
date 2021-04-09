@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llNewClient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_solid"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".NewClientFragment"
+    tools:ignore="Autofill"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/tvTitle"
+            android:theme="@style/tvTitle"
+            android:text="@string/newclient_hint"
+            />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            style="@style/etNewClient"
+            android:hint="@string/first_name_hint"
+            />
+
+        <EditText
+            android:id="@+id/etLastName"
+            style="@style/etNewClient"
+            android:hint="@string/last_name_hint"
+            />
+
+        <EditText
+            android:id="@+id/etLicense"
+            style="@style/etNewClient"
+            android:hint="@string/drivers_license_hint"
+            android:inputType="number"
+            />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etPhone"
+            style="@style/etNewClient"
+            android:hint="@string/phone_number_hint"
+            android:inputType="number"
+            app:mask="(###) ###-####"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/etNewClient"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/etStreet"
+            style="@style/etNewClient"
+            android:hint="@string/street_hint"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/etCity"
+                style="@style/etNewClient"
+                android:ems="9"
+                android:hint="@string/city_hint"
+                />
+
+            <Spinner
+                android:id="@+id/spnState"
+                style="@style/spnOnPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/states"
+                android:theme="@style/spinnerStyle"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNewClient"
+            style="@style/btnPrimary"
+            android:text="@string/add_new_client_btn"
+            />
+
+    </LinearLayout>
+</LinearLayout>

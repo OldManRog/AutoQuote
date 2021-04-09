@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_solid"
+    android:gravity="center_horizontal"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    app:layout_scrollFlags="scroll"
+    tools:context=".QuoteInformation"
+    >
+
+
+    <!--    <DatePicker-->
+    <!--        android:id="@+id/policy_date_picker"-->
+    <!--        android:layout_width="230dp"-->
+    <!--        android:layout_height="73dp"-->
+    <!--        android:calendarViewShown="false"-->
+    <!--        android:datePickerMode="spinner"-->
+    <!--        android:theme="@style/dpTextColor"-->
+    <!--        />-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:theme="@style/spinnerStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/ETnameQuoteInfo"
+                style="@style/spnQuoteInformation"
+                android:layout_marginTop="10dp"
+                android:ems="9"
+                android:entries="@array/auth_arr"
+                android:hint="@string/QuoteInfo_Hint_client_name"
+                android:paddingLeft="7dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/off_white"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/ETphoneQuoteInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="9"
+                android:entries="@array/auth_arr"
+                android:hint="Client Phone Number"
+                android:paddingLeft="6dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/off_white"
+                android:textSize="17sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/ETLocationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="9"
+                    android:padding="6dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textCursorDrawable="@drawable/cursor_default"
+                    android:textSize="17sp"
+                    />
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/DDmake"
+                style="@style/spnQuoteInformation"
+                android:prompt="@string/MakePrompt"
+
+                />
+
+            <Spinner
+                android:id="@+id/DDmodel"
+                style="@style/spnQuoteInformation"
+                android:prompt="@string/ModelPrompt"
+                android:theme="@style/spnOnPrimary"
+                />
+
+
+            <Spinner
+                android:id="@+id/DDyear"
+                style="@style/spnQuoteInformation"
+                android:entries="@array/Year_arr"
+                android:prompt="@string/YearPrompt"
+                android:theme="@style/spnOnPrimary"
+                />
+
+            <Spinner
+                android:id="@+id/DDmiles"
+                style="@style/spnQuoteInformation"
+                android:entries="@array/miles_arr"
+                android:foregroundTint="#FFFFFF"
+                android:prompt="@string/MilesPrompt"
+                android:theme="@style/spnOnPrimary"
+                />
+
+            <Spinner
+                android:id="@+id/DDfuelType"
+                style="@style/spnQuoteInformation"
+                android:entries="@array/fuel_arr"
+                android:theme="@style/spnOnPrimary"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/ETengineDisplacement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="9"
+                    android:hint="Engine Displacement"
+                    android:inputType="numberDecimal"
+                    android:text="2.5"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textCursorDrawable="@drawable/cursor_default"
+
+                    android:textSize="17sp"
+                    />
+
+                <EditText
+                    android:id="@+id/ETmsrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="9"
+                    android:hint="MSRP"
+                    android:inputType="number"
+                    android:text="36000"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textCursorDrawable="@drawable/cursor_default"
+
+                    android:textSize="17sp"
+                    />
+
+                <EditText
+                    android:id="@+id/ETaccessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="9"
+                    android:hint="Cost of Accessories"
+                    android:inputType="number"
+                    android:text="1200"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textCursorDrawable="@drawable/cursor_default"
+
+                    android:textSize="17sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEngineDis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Engine"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.418"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.732"
+            />
+
+        <TextView
+            android:id="@+id/tvMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="MSRP"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.838"
+            />
+
+        <TextView
+            android:id="@+id/tvFuelType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Add Ons"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.937"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Switch
+        android:id="@+id/swYesorNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Does the Client have previous Claims?"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/pastClaims"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        >
+
+        <Spinner
+            android:id="@+id/DDamtOfClaims"
+            style="@style/spnQuoteInformation"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/claims_arr"
+            android:theme="@style/spinnerStyle"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/tvPleaseSelecDiscounts"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <CheckBox
+            android:id="@+id/CBStudent"
+            style="@style/quoteInfoCheckbox"
+            android:text="@string/quoteInfoCheckBox1"
+            />
+
+        <CheckBox
+            android:id="@+id/CBmilitary"
+            style="@style/quoteInfoCheckbox"
+            android:text="@string/quoteInfoCheckBox2"
+
+            />
+
+        <CheckBox
+            android:id="@+id/CBSenior"
+            style="@style/quoteInfoCheckbox"
+            android:text="@string/quoteInforCheckBox3"
+
+            />
+
+
+        <CheckBox
+            android:id="@+id/CBubi"
+            style="@style/quoteInfoCheckbox"
+            android:layout_marginRight="20dp"
+            android:text="@string/quoteInfoCheckBox4"
+            />
+
+
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/BtnViewQuotes"
+            style="@style/btnPrimary"
+            android:text="View Quotes"
+
+
+            />
+
+
+
+</LinearLayout>

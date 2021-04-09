@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="false"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/background_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/client_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/client_image_inside"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/first_name_hint"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alec"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/tvFullName"
+            style="@style/tvPrimary.card"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toEndOf="@id/client_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvEmailAddress"
+            />
+
+
+        <TextView
+            android:id="@+id/tvEmailAddress"
+            style="@style/tvPrimary.card.sm"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/client_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            style="@style/tvPrimary.card.sm"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toEndOf="@id/client_image"
+            app:layout_constraintTop_toBottomOf="@id/tvEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btnPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/transparent"
+            android:contentDescription="@string/phone_symbol_on_client_card"
+            android:src="@drawable/ic_phone"/>
+<!--
+        <ImageButton
+            android:id="@+id/btnEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnPhone"
+            android:backgroundTint="@color/transparent"
+            android:contentDescription="@string/phone_symbol_on_client_card"
+            android:src="@drawable/ic_email"/>
+-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
